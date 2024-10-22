@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "The Box.sln"
+    "dotnet.defaultSolution": "Wave Walker 3D.sln"
 }

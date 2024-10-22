@@ -64,6 +64,7 @@ public class SonarPulse : MonoBehaviour
             }
             if (hitCollider.CompareTag("Key"))
             {
+                ActivateOutline.instance.Activate();
                 sonarMaterial.SetColor("_EdgeGlow", Color.cyan);
                 break;
             }
