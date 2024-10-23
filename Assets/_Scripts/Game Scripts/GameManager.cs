@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
         pauseAnim.SetBool("Is Paused", isPaused); 
         GUI.SetActive(!isPaused);
         Time.timeScale = isPaused ? 0f : 1f;
+        Cursor.lockState = isPaused ? CursorLockMode.None : CursorLockMode.Locked;
     }
 
     public void PlayerDead()

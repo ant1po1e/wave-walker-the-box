@@ -16,6 +16,9 @@ public class DrawPulse : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K) && Time.time > canFire || Input.GetMouseButtonDown(0) && Time.time > canFire) 
         {
+            
+            AudioManager audioManager = AudioManager.instance;
+            audioManager.PlaySFX("sonarPulse");
             Instantiate(sonarPrefab, transform.position, Quaternion.identity);
             canFire = Time.time + fireRate;
         }
