@@ -60,12 +60,29 @@ public class SonarPulse : MonoBehaviour
             if (hitCollider.CompareTag("Enemy"))
             {
                 sonarMaterial.SetColor("_EdgeGlow", Color.red);
+                ActivateOutline activateOutline = hitCollider.GetComponent<ActivateOutline>();
+                activateOutline.Activate();
+                EnemyAI enemyAI = hitCollider.GetComponent<EnemyAI>();
+                if (enemyAI != null)
+                    {
+                        enemyAI.TriggerChase();
+                    }
                 break;
             }
+            
             if (hitCollider.CompareTag("Key"))
             {
-                ActivateOutline.instance.Activate();
                 sonarMaterial.SetColor("_EdgeGlow", Color.cyan);
+                ActivateOutline activateOutline = hitCollider.GetComponent<ActivateOutline>();
+                activateOutline.Activate();
+                break;
+            }
+
+            if (hitCollider.CompareTag("Door"))
+            {
+                sonarMaterial.SetColor("_EdgeGlow", Color.white);
+                ActivateOutline activateOutline = hitCollider.GetComponent<ActivateOutline>();
+                activateOutline.Activate();
                 break;
             }
         }
