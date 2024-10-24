@@ -51,6 +51,7 @@ public class Door : MonoBehaviour
                 needKeyText.SetBool("Activate", true);
             } else 
             {
+                Cursor.lockState = CursorLockMode.None;
                 UnlockNewLevel();
                 Time.timeScale = 0f;
                 AudioManager audioManager = AudioManager.instance;

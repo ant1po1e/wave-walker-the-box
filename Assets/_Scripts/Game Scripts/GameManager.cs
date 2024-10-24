@@ -70,7 +70,8 @@ public class GameManager : MonoBehaviour
     public void PlayerDead()
     {
         isDead = true;
-
+        Cursor.lockState = CursorLockMode.None;
+        
         if (Random.value < jumpscareChance)
         {
             TriggerJumpscare();

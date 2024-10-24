@@ -41,13 +41,13 @@ public class EnemyAI : MonoBehaviour
         chaseEndTime = Time.fixedTime + chaseDuration;
     }
 
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerEnter(Collider other) 
     {
         if (other.CompareTag("Player") && isChasing == true)
         {
             isChasing = false;
             agent.ResetPath();
-            // GameManager.instance.PlayerDead();
+            GameManager.instance.PlayerDead();
         }
     }
 }
