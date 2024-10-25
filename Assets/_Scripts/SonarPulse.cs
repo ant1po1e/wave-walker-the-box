@@ -67,7 +67,13 @@ public class SonarPulse : MonoBehaviour
                     {
                         enemyAI.TriggerChase();
                     }
-                break;
+            }
+
+            if (hitCollider.CompareTag("Trap"))
+            {
+                sonarMaterial.SetColor("_EdgeGlow", Color.yellow);
+                ActivateOutline activateOutline = hitCollider.GetComponent<ActivateOutline>();
+                activateOutline.Activate();
             }
             
             if (hitCollider.CompareTag("Key"))
@@ -75,7 +81,6 @@ public class SonarPulse : MonoBehaviour
                 sonarMaterial.SetColor("_EdgeGlow", Color.cyan);
                 ActivateOutline activateOutline = hitCollider.GetComponent<ActivateOutline>();
                 activateOutline.Activate();
-                break;
             }
 
             if (hitCollider.CompareTag("Door"))
@@ -83,7 +88,6 @@ public class SonarPulse : MonoBehaviour
                 sonarMaterial.SetColor("_EdgeGlow", Color.white);
                 ActivateOutline activateOutline = hitCollider.GetComponent<ActivateOutline>();
                 activateOutline.Activate();
-                break;
             }
         }
     }

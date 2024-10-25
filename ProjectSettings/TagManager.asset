@@ -8,6 +8,7 @@ TagManager:
   - Key
   - Sonar
   - Door
+  - Trap
   layers:
   - Default
   - TransparentFX
