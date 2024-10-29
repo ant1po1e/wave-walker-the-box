@@ -89,6 +89,13 @@ public class SonarPulse : MonoBehaviour
                 ActivateOutline activateOutline = hitCollider.GetComponent<ActivateOutline>();
                 activateOutline.Activate();
             }
+
+            if (hitCollider.CompareTag("Platform"))
+            {
+                sonarMaterial.SetColor("_EdgeGlow", Color.grey);
+                ActivateOutline activateOutline = hitCollider.GetComponent<ActivateOutline>();
+                activateOutline.Activate();    
+            }
         }
     }
 }

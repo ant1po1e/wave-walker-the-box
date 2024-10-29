@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Basic Enemy.unity
     guid: 72a280133a27f6c4c90c9b75d73c1fff
+  - enabled: 1
+    path: Assets/_Scenes/Level 1.unity
+    guid: c718a5c4449d19742805567527c26bb9
+  - enabled: 1
+    path: Assets/_Scenes/Level 2.unity
+    guid: a5d9f10e64f52df42822b4ccfabf8a01
+  - enabled: 1
+    path: Assets/_Scenes/Level 3.unity
+    guid: d122981d7cb11cb4c90ee3dfb63ea890
   m_configObjects: {}

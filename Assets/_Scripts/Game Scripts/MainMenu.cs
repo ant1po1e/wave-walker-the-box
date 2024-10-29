@@ -12,6 +12,11 @@ public class MainMenu : MonoBehaviour
     private bool settingActive;
     private bool creditsActive;
     private bool levelSelectActive; 
+
+    private void Start() 
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
     
     public void ActivateSetting()
     {

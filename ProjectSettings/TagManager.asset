@@ -9,6 +9,7 @@ TagManager:
   - Sonar
   - Door
   - Trap
+  - Platform
   layers:
   - Default
   - TransparentFX
