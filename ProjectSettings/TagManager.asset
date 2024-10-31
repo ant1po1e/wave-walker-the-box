@@ -10,6 +10,7 @@ TagManager:
   - Door
   - Trap
   - Platform
+  - WallTrap
   layers:
   - Default
   - TransparentFX

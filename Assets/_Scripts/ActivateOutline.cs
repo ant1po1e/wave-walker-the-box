@@ -27,11 +27,11 @@ public class ActivateOutline : MonoBehaviour
     public void Activate()
     {
         if (fadeCoroutine != null)
-    {
-        StopCoroutine(fadeCoroutine);
-    }
-    
-    fadeCoroutine = StartCoroutine(Active());
+        {
+            StopCoroutine(fadeCoroutine);
+        }
+        
+        fadeCoroutine = StartCoroutine(Active());
     }
 
     IEnumerator Active()
