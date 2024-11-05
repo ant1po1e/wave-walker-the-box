@@ -39,7 +39,7 @@ public class MenuCameraMovement : MonoBehaviour
                 continue;
             Vector2 newPosition = initialPositions[i] + new Vector2(mouseX * layers[i].parallaxStrength, mouseY * layers[i].parallaxStrength);
 
-            layers[i].rectTransform.anchoredPosition = Vector2.Lerp(layers[i].rectTransform.anchoredPosition, newPosition, Time.deltaTime * 5f);
+            layers[i].rectTransform.anchoredPosition = Vector2.Lerp(layers[i].rectTransform.anchoredPosition, newPosition, Time.unscaledDeltaTime * 5f);
         }
     }
 }

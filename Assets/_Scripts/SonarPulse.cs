@@ -78,7 +78,7 @@ public class SonarPulse : MonoBehaviour
 
             if (hitCollider.CompareTag("WallTrap"))
             {
-                sonarMaterial.SetColor("_EdgeGlow", Color.yellow);
+                sonarMaterial.SetColor("_EdgeGlow", Color.grey);
                 ActivateOutline activateOutline = hitCollider.GetComponent<ActivateOutline>();
                 activateOutline.Activate();
                 MovingWall movingWall = hitCollider.GetComponent<MovingWall>();

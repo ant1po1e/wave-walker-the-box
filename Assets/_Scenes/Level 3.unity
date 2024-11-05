@@ -1009,7 +1009,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.06666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: d6bbb87497c98344a97bbf96db468757, type: 2}
   m_BuildHeightMesh: 0
@@ -5254,6 +5254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1389940188}
   - component: {fileID: 1389940187}
+  - component: {fileID: 1389940189}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -5294,6 +5295,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1389940189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389940186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc4bb8f7733d5642a995e1db997bea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers:
+  - rectTransform: {fileID: 930276136}
+    parallaxStrength: 35
+  - rectTransform: {fileID: 2138358076}
+    parallaxStrength: 25
+  - rectTransform: {fileID: 791480362}
+    parallaxStrength: 25
+  - rectTransform: {fileID: 1379164014}
+    parallaxStrength: 25
+  - rectTransform: {fileID: 1309247538}
+    parallaxStrength: 25
+  - rectTransform: {fileID: 1126188285}
+    parallaxStrength: 25
+  - rectTransform: {fileID: 185134123}
+    parallaxStrength: 25
 --- !u!1 &1430141812
 GameObject:
   m_ObjectHideFlags: 0
