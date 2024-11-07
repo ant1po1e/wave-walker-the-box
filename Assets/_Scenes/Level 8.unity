@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.06666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: c0b025fa18a44e74d86aabb8aa1fa53d, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 393d5dbd447fffb4f97eb5b0c8de7d22, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &288726682
 Transform:
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0.49019608, g: 0.49019608, b: 0.49019608, a: 1}
-  outlineWidth: 2
+  outlineWidth: 5
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -3407,7 +3407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 0.49019608, g: 0.49019608, b: 0.49019608, a: 1}
-  outlineWidth: 2
+  outlineWidth: 5
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -4032,7 +4032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needKeyText: {fileID: 982653635}
-  nextLevel: {fileID: 33769413}
+  nextLevel: {fileID: 705845960}
   keyIcon: {fileID: 442083702}
   hasKey: 0
 --- !u!114 &915408782
